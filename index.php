@@ -135,7 +135,8 @@ include 'comps/header.php';
           <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.4); border-radius: 20px;">
             <div class="main-title mb-2"><?php echo $config['APP_NAME']; ?></div>
             <p><?php echo $config['BUSINESS_ADDRESS']; ?></p>
-            <a href="https://niyooshawebsitesllp.in/product/property-expert/" class="start-btn">Start your Journey</a>
+            <!-- <a href="https://niyooshawebsitesllp.in/product/property-expert/" class="start-btn">Start your Journey</a> -->
+            <a href="/login.php" class="start-btn">Start your journey</a>
           </div>
         </div>
       </div>
