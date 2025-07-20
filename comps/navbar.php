@@ -143,9 +143,6 @@ if (!$logoExists) {
                     <!--If not logged in-->
                     <?php if (!isset($_SESSION['user'])): ?>
                         <li class="nav-item">
-                            <a class="btn btn-primary" href="https://niyooshawebsitesllp.in/product/property-expert/">SUBSCRIBE NOW FOR FREE</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="mailto:<?php echo $config['ADMIN_EMAIL']; ?>"><i class="bi bi-envelope"></i></a>
                         </li>
                         <li class="nav-item">
