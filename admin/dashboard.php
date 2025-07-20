@@ -1,14 +1,26 @@
 <?php
 require __DIR__ . '/../includes/session.php';
 
-$config = require_once __DIR__ . '/../config/config.php';
-require '../includes/functions.php';
+// printing the session array for debugging
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 
-// If not logged in or not an admin, redirect to login
+// If not logged in or not a user, redirect to login
 if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
     header('Location: ../logout.php');
     exit();
 }
+
+// printing errors for debugging
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('log_errors', 1);
+// ini_set('error_log', __DIR__ . '/php-error.log');
+
+$config = require_once __DIR__ . '/../config/config.php';
+require '../includes/functions.php';
+
 ?>
 
 <?php
@@ -43,7 +55,7 @@ include '../comps/header.php';
                                 </div>
                             </a>
                         </div>
-                        
+
                         <!-- List Card -->
                         <div class="col-12 col-md-10">
                             <a href="sell_data.php" class="text-decoration-none">
