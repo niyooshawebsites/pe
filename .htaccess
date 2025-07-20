@@ -1,0 +1,8 @@
+# Custom 404 page
+ErrorDocument 404 /404.php
+
+# Protect config.php
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>

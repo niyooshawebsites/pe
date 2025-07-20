@@ -1,0 +1,111 @@
+.app-background {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #0f1e5a 0%, #000000 100%);
+  color: white;
+  font-family: sans-serif;
+}
+
+.custom-card {
+  padding: 2rem;
+  border: 1px solid rgba(108, 117, 125, 0.4);
+  border-radius: 1.25rem;
+  background-color: rgba(33, 37, 41, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.1);
+  background-color: rgba(33, 37, 41, 0.5);
+  border-color: #6c757d;
+}
+
+body {
+  top: 0px !important;
+}
+
+.outer-box {
+  max-width: 95vw;
+  height: 91vh;
+  margin: auto;
+}
+
+.inner-box {
+  height: 100%;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.sub-box {
+  height: 100%;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.start-btn {
+  padding: 8px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.custom-card {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+.goog-te-gadget {
+  font-family: arial;
+  font-size: 11px;
+  color: #666;
+  white-space: nowrap;
+  display: flex;
+  justify-content: end !important;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink-success {
+  animation: blink 1s infinite !important;
+}
